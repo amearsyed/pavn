@@ -1,0 +1,29 @@
+package objectRespoistory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class clickoncreatesym {
+	@FindBy(xpath="//img[@src='themes/softed/images/btnL3Add.gif']")
+	private WebElement cont;
+
+	public clickoncreatesym(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+
+	public WebElement getCont() {
+		return cont;
+	}
+
+	public void setclick() {
+		cont.click();
+	}
+
+
+
+
+
+
+}
