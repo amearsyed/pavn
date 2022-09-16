@@ -7,7 +7,7 @@ import objectRespoistory.contactdetails;
 import objectRespoistory.contactorganisation;
 
 public class CreateContactwithorgTest extends Baseclass {
-	@Test
+	@Test(groups="regression testing")
 	public void createcontact() throws Exception
 	{
 

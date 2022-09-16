@@ -7,7 +7,7 @@ import objectRespoistory.Organisationinfopage;
 import objectRespoistory.createOrganisationpage;
 import objectRespoistory.organisationpage;
 public class CreateOragnisationTest extends Baseclass{
-	@Test
+	@Test(groups="smoke testing")
 	public void createorg() throws Exception
 	{
 

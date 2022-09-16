@@ -8,7 +8,7 @@ import objectRespoistory.createOrganisationpage;
 import objectRespoistory.organisationpage;
 
 public class CreateorgnamewithIndustryTest extends Baseclass {
-	@Test
+	@Test(groups="smoke testing")
 	public void createorgindustry() throws Throwable {
 
 	String orgname="RMG"+Javautility.generateRandomNumber();

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel ="tests" thread-count="2">
-  <test name="Test-chrome">
-  <parameter name="BROWSER"  value="chrome"/>
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="Test-runner-chrome">
+       <parameter name="BROWSER" value="chrome"/> 
     <classes>
-      <class name="com.crm.vtiger.Testcases.Lead">
-      <methods>
-      <include name="leadtest"/>
-      </methods>
-      </class>
+      <class name="com.crm.vtiger.Testcases.CreateorgnamewithIndustryTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test-Firefox">
-  <parameter name="BROWSER"  value="Firefox"/>
+   <test name="Test-runner-firefox">
+     <parameter name="BROWSER" value="firefox"/> 
     <classes>
-      <class name="com.crm.vtiger.Testcases.Lead">
-      <methods>
-      <include name="leadinvalid"/>
-      </methods>
-      </class>
+      <class name="com.crm.vtiger.Testcases.CreateOragnisationTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

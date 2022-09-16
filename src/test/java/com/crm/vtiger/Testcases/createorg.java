@@ -12,7 +12,7 @@ import objectRespoistory.organisationpage;
 
 public class createorg extends Baseclass {
 	
-	@Test(groups = "smoke")
+	@Test(groups = "smoke test")
 	public void createorg() throws Exception
 	{
 		ExcelFileUtility utility=new ExcelFileUtility();
@@ -31,7 +31,7 @@ public class createorg extends Baseclass {
 		oi.orgverfication();
 
 }
-	@Test(groups = "regression")
+	@Test(groups = "smoke test")
 	public void createorgindustry() throws Exception {
 	String orgname="RMG"+Javautility.generateRandomNumber();
 	String Industrytype = utility.readdatafromex("Sheet4", 4, 2);
