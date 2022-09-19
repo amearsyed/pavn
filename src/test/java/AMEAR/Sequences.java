@@ -1,3 +1,4 @@
+package AMEAR;
 
 public class Sequences {
 
