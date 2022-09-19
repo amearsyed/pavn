@@ -22,7 +22,7 @@ public class flipkart {
 				driver.switchTo().window(ele3);
 			}
 		}
-		String str = driver.findElement(By.xpath("//span[@class='B_NuCI']/../../following-sibling::div/following-sibling::div/following-sibling::div/div/div/div")).getText();
+		String str = driver.findElement(By.xpath("//span[@class='B_NuCI']/../../following-sibling::div[2]/div/div/div")).getText();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.amazon.in/");

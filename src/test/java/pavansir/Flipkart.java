@@ -1,6 +1,7 @@
 
 package pavansir;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -16,11 +17,11 @@ public class Flipkart {
 	public void listdata() {
 		WebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.flipkart.com/");
 		driver.findElement(By.xpath("//button[text()='✕']")).click();
 		driver.findElement(By.name("q")).sendKeys("samsung tv");
-		List<WebElement> ele = driver.findElements(By.xpath("//ul[@class='col-12-12 _1MRYA1 _38UFBk']"));
+		List<WebElement> ele = driver.findElements(By.xpath("//ul[@class='col-12-12 _1MRYA1 _38UFBk']/li"));
 		
 		for(WebElement ele1:ele) {
 			String s = ele1.getText();

@@ -1,7 +1,7 @@
 
 public class practice {
 	public static void main(String[] args) {
-		String str= "Passowrd@123";
+		String str= "Password@123";
 		if(checkuppercase(str)&&checklowercase(str)&&checklength(str)&&checkspecial(str)&&checknumber(str))
 		{
 			System.out.println("True");

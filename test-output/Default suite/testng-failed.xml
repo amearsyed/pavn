@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtiger.Testcases.CreateContactwithorgTest">
+      <class name="pavansir.Flipkart">
         <methods>
-          <include name="closeconwithdb"/>
-          <include name="logout"/>
-          <include name="createcontact"/>
-          <include name="createconwithdb"/>
-          <include name="openbrowser"/>
-          <include name="login"/>
-          <include name="closebrowser"/>
+          <include name="listdata"/>
         </methods>
-      </class> <!-- com.crm.vtiger.Testcases.CreateContactwithorgTest -->
+      </class> <!-- pavansir.Flipkart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
