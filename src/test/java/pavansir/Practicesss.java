@@ -71,7 +71,7 @@ public class Practicesss {
 //			 res=res+str2+str3+" ";
 //		}
 //		
-//			System.out.println(re);
+//			System.out.println(r);
 		
 		
 		String s="i am the god";
