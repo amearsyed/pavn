@@ -275,22 +275,74 @@ public class WebDriverUtility {
 		jse.executeScript("windows.ScrollBy(x,y)");
 	}
 
+	/**
+	 * 
+	 */
+	public void drawBroder(WebElement element, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].style.border='5px solid red'",element);
+	}
+	/*
+	 * 
+	 */
 
+	public String getTiltleByJs(WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		String title = jse.executeScript("return document.title;").toString();
+		return title;
+	}
+	/**
+	 * 
+	 */
+	public void clickElementByJs(WebElement element,WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].click();", element);
+	}
+	/**
+	 * 
+	 */
+	public void generateAlert(WebDriver driver, String message) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("alert('" + message + "')");
+	}
+	/**
+	 * 
+	 */
+	public void refreshBrowser(WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("history.go(0)");
+	}
+	/**
+	 * 
+	 */
+	public void zoomPageByJs(WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("document.body.style.zoom='150%'");
+	}
+	/**
+	 * 
+	 */
+	public void flash(WebElement element, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		String bgcolor = element.getCssValue("backgroundColor");
+		for(int i=0;i<200;i++)
+		{
+			changeColor("#000000",element, driver);//1
+			changeColor(bgcolor,element, driver);//2
+		}	
+	}
+	/**
+	 * 
+	 */
 
+	public void changeColor(String color, WebElement element, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].style.backgroundcolor = '" + color + "'", element);
+		try {
+			Thread.sleep(20);
+		}catch (InterruptedException e) {
+		}
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 }

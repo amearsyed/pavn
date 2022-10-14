@@ -28,5 +28,9 @@ public class Javautility {
 		
 		
 	}
+	public static int readdatafromex(String string, int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

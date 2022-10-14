@@ -1,4 +1,4 @@
-package AMEAR;
+package Testyantra;
 
 import java.time.Duration;
 
@@ -7,10 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Makemytrip2 {
+public class mymakemytrip {
 	@Test
 	public void trip()
 	{
+
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -35,28 +36,11 @@ public class Makemytrip2 {
 			}
 		}
 	}
-	}
+
+}		
+
+	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
 
